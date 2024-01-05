@@ -1,0 +1,345 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* navbar */
+body{
+  width: 100vw;
+  overflow-x: hidden;
+}
+.brand-title{
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+header{
+  position: fixed;
+  width: 100vw;
+  height: 2.5rem;
+  padding: 20px 10px;
+  z-index: 100;
+  border-bottom: rgba(128, 128, 128, 0.26) solid 0.1px;
+  background-color: gray;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-items{
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  align-items: center;
+ 
+
+
+}
+.hover{
+  transition:  0.3s ease-in-out;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.616);
+}
+.hover:hover{
+  font-weight: bold;
+  color:#ffffff;
+}
+main{
+  width: 100vw;
+  background: linear-gradient(to bottom, rgba(77, 75, 75, 0.623) 0%, rgba(0, 0, 0, 0.15) 100%),
+    radial-gradient(at top center, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.40) 120%) #989898;
+  background-blend-mode: multiply,
+    multiply;
+}
+.cta{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 10%;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+#container{
+  display: flex;
+  height: max-content;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.holder{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-top: 10%;
+}
+.hero-content{
+  align-self: center;
+  scale: 1.5;
+}
+.hero-font{
+  position: absolute;
+  align-self: center;
+  font-style: italic;
+  color: rgb(255, 255, 255);
+  font-size: 20rem;
+}
+
+ .outline{
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-fill-color: rgba(255, 255, 255, 0); 
+  -webkit-text-stroke: 5px rgb(255, 255, 255);
+  margin: 30px 15px 20px 40px;
+ }
+ .hero-description{
+  text-align: center;
+  font-size: 2rem;
+  margin:  7rem 2rem 1rem 2rem;
+ }
+ .call-to-action{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+  width: 60%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
+  border: solid rgba(0, 0, 0, 0);
+  transition:  0.5s ;
+ }
+ .sizes{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
+  border: solid rgba(0, 0, 0, 0);
+  gap: 20px;
+ }
+ hr{
+  width: 10%;
+  display: flex;
+  align-self: center;
+  border: 1px dashed  rgb(255, 255, 255);
+ }
+ .size-btns{
+  display: flex;
+  gap: 20px;
+ }
+ .size-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: rgba(245, 245, 245, 0);
+  border: solid whitesmoke 2px;
+  transition:  0.5s ;
+ }
+.cta-btn{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin: 10px 20px;
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
+  background-color: whitesmoke;
+  border: solid rgba(0, 0, 0, 0);
+  transition:  0.5s ;
+}
+.size-btn:hover{
+  background-color: rgba(255, 255, 255);
+  color: black;
+}
+ @media screen and (max-width: 600px) {
+   .nav{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top:3.5rem;
+    background-color: rgba(107, 103, 103, 0.199);
+    border-bottom: solid rgba(255, 255, 255, 0.473) 1px;
+    border-right: solid rgba(255, 255, 255, 0.473) 1px;
+    backdrop-filter: blur(50px);
+    gap: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    transition:  0.5s ;
+    padding:50px;
+    right: -100%;
+   }
+   .show{
+    right:25%;
+   }
+
+   .cta{
+    width: 40%;
+    font-size: 1.5rem;
+   }
+   .holder{
+    margin-top: 40%;
+   }
+  .hero-font {
+    font-size: 10rem;
+  }
+  .hero-content{
+    scale: 0.8;
+  }
+  .call-to-action{
+    margin-top: 0;
+    flex-direction: column;
+    font-size: 1rem;
+  }
+ }
+ @media screen and (min-width: 768px) {
+   .toggle{
+    display: none;
+   }
+  
+ }
+#products{
+  display: grid;
+  place-items: center;
+  padding: 5% 1.5%;
+}
+.card-deck{
+  display: grid;
+  place-items: center;
+  margin-top: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  gap: 30px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  backdrop-filter: blur(50px);
+  transition:  0.5s ;
+  padding: 50px;
+}
+.card-img img{
+  width: 90%;
+}
+.card-description h3,p{
+  color: black;
+}
+.card-description span{
+  color: rgb(21, 255, 0);
+  font-weight: bold;
+}
+.card-cta-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: rgb(0, 0, 0);
+  padding: 15px 30px;
+  color: rgb(255, 255, 255);
+  border-radius:50px ;
+  transition: 0.3ms;
+}
+.card-cta-btn:hover{
+  background-color: rgb(255, 255, 255);
+  color: black;
+  font-weight: bold;
+  border: solid 1px rgb(0, 0, 0);
+}
+
+#products h1{
+  font-size: 3rem;
+  text-decoration: underline;
+}
+
+#contact{
+  background-color: black;
+  padding:  5% 15%;
+  border-radius: 5%;
+  margin-top: 5rem;
+}
+form {
+  margin: 20px;
+  max-width: 400px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  width: 30%;
+  background-color: #4ca8af;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: max-content;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  bottom: 0;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.footer-address p{
+  color:white;
+}
+.social-handles p{
+  color: white;
+}
+.social-handles{
+  display: flex;
+  height: 10rem;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-address{
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.social-icons{
+  margin-top: 1rem;
+  font-size: 2rem;
+}
