@@ -25,7 +25,7 @@ header{
   padding: 20px 10px;
   z-index: 100;
   border-bottom: rgba(128, 128, 128, 0.26) solid 0.1px;
-  background-color: gray;
+  background-color: rgba(128, 128, 128, 0.63);
 }
 
 .navbar{
@@ -45,7 +45,7 @@ header{
 .hover{
   transition:  0.3s ease-in-out;
   font-size: 1.5rem;
-  color: rgba(255, 255, 255, 0.616);
+  color: rgba(0, 0, 0, 0.616);
 }
 .hover:hover{
   font-weight: bold;
@@ -167,7 +167,12 @@ main{
   color: black;
   background-color: whitesmoke;
   border: solid rgba(0, 0, 0, 0);
-  transition:  0.5s ;
+  transition: all 0.5s ;
+}
+.cta-btn:active{
+  background-color: rgb(255, 255, 255);
+  border: solid rgba(0, 0, 0, 0);
+  color: black;
 }
 .size-btn:hover{
   background-color: rgba(255, 255, 255);
@@ -294,6 +299,7 @@ textarea {
   padding: 8px;
   margin-bottom: 10px;
   border-radius: 5px;
+  color: rgb(0, 0, 0);
   border: 1px solid #ccc;
 }
 
@@ -339,7 +345,26 @@ footer{
   flex-direction: column;
   gap: 20px;
 }
-.social-icons{
-  margin-top: 1rem;
+.social-icons i {
+
+  margin: 1rem 20px 20px 20px;
   font-size: 2rem;
+  transition: all 0.5s;
+}
+.social-icons i:hover{
+  color: aqua;
+}
+.privacy-policy{
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  text-decoration: underline;
+}
+.footer-brand-title{
+  display: flex;
+  align-self: start;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
 }

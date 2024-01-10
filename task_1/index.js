@@ -25,5 +25,5 @@ VANTA.TRUNK({
   spacing: 10.0,
   chaos: 0.0,
 });
-
+AOS.init();
 

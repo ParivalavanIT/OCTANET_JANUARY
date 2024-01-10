@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <title class="italic-letter">ZHOE.</title>
 </head>
@@ -59,9 +60,9 @@
             </div>
         </section>
         <section id="products">
-            <h1> Products</h1>
+            <h1 data-aos="fade-down"> Products</h1>
             <div class="card-deck">
-                <div class="card">
+                <div class="card" data-aos="flip-left">
                     <div class="card-img">
                         <img src="./assets/twin_light_brothers.jpg" alt="">
                     </div>
@@ -74,7 +75,7 @@
                         <a href="#" class="card-cta-btn"><i class='bx bx-cart hover-1'></i> Buy Now</a>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="flip-left">
                     <div class="card-img">
                         <img src="./assets/twin_light_brothers_neo.jpg" alt="">
                     </div>
@@ -87,7 +88,7 @@
                         <a href="#" class="card-cta-btn"><i class='bx bx-cart hover-1'></i> Buy Now</a>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="flip-left">
                     <div class="card-img">
                         <img src="./assets/White_wolf.jpg" alt="">
                     </div>
@@ -101,10 +102,10 @@
                     </div>
                 </div>
             </div>
-            <div id="contact">
+            <div   data-aos="fade-right" data-aos-offset="300" id="contact">
                 <h2>Contact Us</h2>
                 
-                <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                <form action="mailto:parivalavan2345@gmail.com" method="post" enctype="text/plain">
                     <label for="name">Your Name</label>
                     <input type="text" id="name" name="name" required>
                 
@@ -120,14 +121,14 @@
         </section>
     </main>
     <footer>
-            <div class=" brand-title animate__animated animate__lightSpeedInLeft animate__delay-1s">ZHOE.</div>
-            <div class="footer-address">
+            <div class="footer-brand-title" data-aos="fade-right">ZHOE.</div>
+            <div class="footer-address " data-aos="fade-right">
                 <p>123 Main Street, City, Country</p>
                 <p>Email: support@zhoe.com</p>
                 <p>Phone: +911234567890</p>
             </div>
-            <div class="social-handles">
-                <div>
+            <div class="social-handles" data-aos="fade-left">
+                <div class="privacy-policy">
                 <a href="#">Privacy Policy</a>
                 <a href="#">Terms of Service</a>
                 </div>
@@ -150,7 +151,7 @@
     </footer>
     <script src="./js/p5.min.js"></script>
     <script src="./js/vanta.trunk.min.js"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
